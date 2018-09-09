@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scroll</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    body > * {
+      margin: 10px;
+    }
+
+    img {
+      display: block;
+    }
+
+    .demo {
+      flex: 1 1 30%;
+      max-height: 50vh;
+      overflow: auto;
+      border: 2px solid #fc0;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="demo">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid debitis consequatur nostrum repellendus laudantium, cum facilis ad, quos, nulla asperiores porro suscipit repellat earum provident? Nesciunt quae harum at.</div>
+      <img src="https://placeimg.com/400/200" alt="">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum nemo rerum fuga excepturi neque dolor eveniet ut necessitatibus. Quam, incidunt. Ut, consequatur eligendi et itaque ipsa aut reiciendis laboriosam?</div>
+    </div>
+
+    <div class="demo">
+      <h3>Lorem, ipsum dolor.</h3>
+      <img src="https://placeimg.com/480/360" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur suscipit amet impedit cumque iure dolore, aliquid, error quis similique doloremque non repellendus quam aperiam, porro adipisci libero voluptas praesentium?</p>
+    </div>
+
+    <div class="demo">
+      <h3>Lorem ipsum dolor sit.</h3>
+      <img src="https://placeimg.com/300/300" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente suscipit totam quos, quaerat, saepe nobis labore itaque odit dolorum odio illum ullam fuga cumque qui repellat error asperiores exercitationem.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque repudiandae maiores eveniet?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maxime possimus dolor autem, commodi animi eos non in?</p>
+    </div>
+
+    <div class="demo">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid debitis consequatur nostrum repellendus laudantium, cum facilis ad, quos, nulla asperiores porro suscipit repellat earum provident? Nesciunt quae harum at.</div>
+      <img src="https://placeimg.com/400/200" alt="">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum nemo rerum fuga excepturi neque dolor eveniet ut necessitatibus. Quam, incidunt. Ut, consequatur eligendi et itaque ipsa aut reiciendis laboriosam?</div>
+    </div>
+
+    <div class="demo">
+      <h3>Lorem, ipsum dolor.</h3>
+      <img src="https://placeimg.com/480/360" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur suscipit amet impedit cumque iure dolore, aliquid, error quis similique doloremque non repellendus quam aperiam, porro adipisci libero voluptas praesentium?</p>
+    </div>
+
+    <div class="demo">
+      <h3>Lorem ipsum dolor sit.</h3>
+      <img src="https://placeimg.com/300/300" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente suscipit totam quos, quaerat, saepe nobis labore itaque odit dolorum odio illum ullam fuga cumque qui repellat error asperiores exercitationem.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque repudiandae maiores eveniet?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maxime possimus dolor autem, commodi animi eos non in?</p>
+    </div>
+
+    <div class="demo">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid debitis consequatur nostrum repellendus laudantium, cum facilis ad, quos, nulla asperiores porro suscipit repellat earum provident? Nesciunt quae harum at.</div>
+      <img src="https://placeimg.com/400/200" alt="">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eum nemo rerum fuga excepturi neque dolor eveniet ut necessitatibus. Quam, incidunt. Ut, consequatur eligendi et itaque ipsa aut reiciendis laboriosam?</div>
+    </div>
+
+    <div class="demo">
+      <h3>Lorem, ipsum dolor.</h3>
+      <img src="https://placeimg.com/480/360" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur suscipit amet impedit cumque iure dolore, aliquid, error quis similique doloremque non repellendus quam aperiam, porro adipisci libero voluptas praesentium?</p>
+    </div>
+
+    <div class="demo">
+      <h3>Lorem ipsum dolor sit.</h3>
+      <img src="https://placeimg.com/300/300" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sapiente suscipit totam quos, quaerat, saepe nobis labore itaque odit dolorum odio illum ullam fuga cumque qui repellat error asperiores exercitationem.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque repudiandae maiores eveniet?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maxime possimus dolor autem, commodi animi eos non in?</p>
+    </div>
+
+    <script src="/src/scroll.js"></script>
+    <script>
+      window.onload = function() {
+        var demos = [].slice.call(document.querySelectorAll('.demo'));
+        demos.forEach(function(el) {
+          new Scroll(el);
+        });
+      }
+    </script>
+</body>
+</html>

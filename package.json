@@ -1,0 +1,11 @@
+{
+  "name": "custom-scroll",
+  "version": "0.0.1",
+  "author": {
+    "name": "monochromer",
+    "email": "monochromer@mail.ru"
+  },
+  "scripts": {
+    "dev": "browser-sync start --server --index example/index.html"
+  }
+}
